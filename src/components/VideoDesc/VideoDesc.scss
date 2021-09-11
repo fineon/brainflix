@@ -1,0 +1,93 @@
+@import './../../partials/fonts';
+@import './../../partials/media-rules';
+@import './../../partials/variables';
+
+.vidinfo{
+
+    &__title{
+        @include AvenirBold;
+        @include h2;
+        margin-top: 32px; 
+    }
+
+    &__stats-aside{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__author-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__author{
+            @include AvenirBold;
+            @include h3;
+            margin: 0
+        }
+
+        &__date{
+            @include AvenirRegular;
+            @include h5;
+            color: $silver;
+            margin: 0 0 0 8px;
+        }
+    }
+
+    &__view-likes{
+        display: flex;
+        flex-direction: row;
+
+        @include desktop{
+            margin-right: 32px;
+        }
+    }
+
+    &__view-container{
+        display: flex;
+        flex-direction: row;
+
+        &__viewicon-count{
+            @include AvenirRegular;
+            @include h5;
+            margin-left: 8px;
+        }
+    }
+
+    &__likes-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 8px;
+
+        &__likeicon-count{
+          @include AvenirRegular;
+          @include h5;  
+          margin-left: 8px;
+        }
+    }
+
+    &__divider{
+        border: 1px solid $silver;
+    }
+
+    &__desc{
+        @include AvenirRegular;
+        @include h4;
+    }
+
+    &__comment-title{
+        @include AvenirBold;
+        @include h3;
+        margin: 24px 0;
+    }
+}

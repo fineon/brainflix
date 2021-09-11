@@ -1,0 +1,14 @@
+@import './../../partials/fonts';
+@import './../../partials/media-rules';
+@import './../../partials/variables';
+
+.main {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+}
+
+// className = "vidinfo__comment-container__form__field__input"

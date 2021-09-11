@@ -1,0 +1,61 @@
+@import './../../partials/fonts';
+@import './../../partials/media-rules';
+@import './../../partials/variables';
+
+.nextvid{
+    margin: 0 16px;
+
+    @include tablet{
+        margin: 0 24px;
+    }
+
+    @include desktop{
+        margin: 0 180px 0 0;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__title{
+        @include AvenirDemi;
+        @include h4;
+        margin-left: 0;
+        color: $silver;
+        text-transform: uppercase;
+    }
+
+    &__card-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 8px 0;
+
+        
+
+
+        &__img{
+            width: 120px;
+            height: 70px;
+            margin-right: 16px;
+            border-radius: 4px;
+            object-fit: cover;
+            
+        }
+
+        &__title-container{
+
+            &__title{
+                margin: 0;
+                @include AvenirBold;
+                @include h4;
+            }
+
+            &__author{
+                margin: 8px 0;
+                @include AvenirRegular;
+                @include h4;
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+@import './../../partials/fonts';
+@import './../../partials/media-rules';
+@import './../../partials/variables';
+
+.vidinfo{
+    margin: 0 16px;
+
+    @include tablet {
+        margin: 0 24px;
+    }
+
+    @include desktop{
+        margin: 0 24px 0 180px;
+        border-right: 2px solid $mercury;
+    }
+
+    &__title{
+        @include AvenirBold;
+        @include h2;
+        margin-top: 32px;
+
+        
+    }
+
+    &__stats-aside{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    &__author-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__author{
+            @include AvenirBold;
+            @include h3;
+            margin: 0
+        }
+
+        &__date{
+            @include AvenirRegular;
+            @include h5;
+            color: $silver;
+            margin: 0 0 0 8px;
+        }
+    }
+
+    &__view-likes{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__view-container{
+        display: flex;
+        flex-direction: row;
+
+        &__viewicon-count{
+            @include AvenirRegular;
+            @include h5;
+            margin-left: 8px;
+        }
+    }
+
+    &__likes-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 8px;
+
+        &__likeicon-count{
+          @include AvenirRegular;
+          @include h5;  
+          margin-left: 8px;
+        }
+    }
+
+    &__divider{
+        border: 1px solid $silver;
+    }
+
+    &__desc{
+        @include AvenirRegular;
+        @include h4;
+    }
+
+    &__comment-title{
+        @include AvenirBold;
+        @include h3;
+        margin: 24px 0;
+    }
+
+    &__comment-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+
+        @include tablet{
+            margin-bottom: 24px;
+        }
+        
+
+        &__img{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin: 24px 8px 0 0;
+        }
+
+        &__form{
+           width: 100%;
+               
+
+            &__title{
+                @include AvenirDemi;
+                @include h5;
+                color: $silver;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            &__desktop{
+                width: 100%;
+                @include tablet{
+                    display: flex;
+                    flex-direction: row;
+                }
+                @include desktop{
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+            &__field{
+                @include AvenirRegular;
+                @include h4;
+                background-color: $alablaster;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                width: 97%;
+                resize: none;
+                
+                &::placeholder{
+                    padding-left: 16px;
+                }
+                &:focus{
+                    border: 2px solid $brainflix-blue-dark;
+                }
+
+                @include tablet {
+                    width: 70%;
+                }
+
+                @include desktop {
+                    width: 70%;
+                }
+            }
+
+            &__button{
+                border: none;
+                border-radius: 4px;
+                background-color: $brainflix-blue;
+                @include AvenirDemi;
+                @include h4;
+                color: white;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 16px;
+                width: 100%;
+                margin: 16px 0;
+
+                @include tablet {
+                    margin: 0 40px 0 16px;
+                    width: 30%;
+                }
+
+                @include desktop {
+                    margin: 0 40px 0 16px;
+                    width: 30%;
+                }
+
+            }
+        }
+    }
+
+    &__comments{
+
+        &__divider{
+            border: 1px solid $silver;
+        }
+
+        &__grand-container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__img{
+            min-width: 40px;
+            max-height: 40px;
+            background-color: $silver;
+            border-radius: 100%;
+            margin: 24px 8px 0 0;
+        }
+
+        &__container{
+            width: 100%;
+        }
+     
+        &__name-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            &__name{
+                @include AvenirBold;
+                @include h4;
+               
+            }
+
+            &__date{
+                @include AvenirRegular;
+                @include h4;
+                color: $silver;
+            }
+        }
+
+        &__content{
+            @include AvenirRegular;
+            @include h4;
+            margin: 0 0 16px 0;
+            
+        }
+    }
+
+
+
+
+}

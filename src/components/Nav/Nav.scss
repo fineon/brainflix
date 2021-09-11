@@ -1,0 +1,123 @@
+
+@import './../../partials/_variables';
+@import './../../partials/_fonts';
+@import './../../partials/_media-rules';
+
+.nav{
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 16px;
+    box-sizing: border-box;
+
+    @include tablet{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 24px;
+    }
+
+    @include desktop{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0 180px;
+    }
+
+    &__link{
+        text-decoration: none;
+
+    }
+
+    &__logo{
+        width: auto;
+        height: auto;
+        margin: 12px 0;
+        
+    }
+
+    &__right{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+
+        @include tablet {
+            width: 50%;
+            flex-flow: row nowrap;
+            align-items: center;
+            
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid $silver;
+        border-radius: 4px;
+        background-color: $alablaster;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__img{
+            width: auto;
+            padding: 8px;
+        }
+
+        &__text{
+            margin: 0;
+            padding-left: 8px;
+            @include AvenirRegular;
+            @include h4;
+           
+        }
+    }
+
+    &__button-userimg{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        
+    }
+
+    &__button{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: $brainflix-blue;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 8px;
+        border-radius: 4px;
+        margin: 8px 16px 16px 0;
+        width: 100%;
+        text-decoration: none;
+
+        @include tablet{
+            margin: 8px 24px 16px 24px;
+        }
+
+        &-text{
+            margin: 0;
+            @include AvenirDemi;
+            color: white;
+            padding: 8px;
+           
+
+        }
+    }
+
+    
+
+    &__userimg{
+        background-image: url("./../../assets/Images/Mohan-muruge.jpg");
+        background-position: center;
+        background-size: cover;
+        min-width: 48px;
+        height: 48px;
+        border-radius: 100%;
+    }
+}

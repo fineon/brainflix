@@ -1,0 +1,42 @@
+//all of font source and mixins
+@font-face {
+    font-family: 'Avenir-Bold';
+    src: url("./../../src/assets/Font/AvenirNext/AvenirNextLTPro-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin AvenirBold {
+    font-family: 'Avenir-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $black;
+}
+
+@font-face {
+    font-family: 'Avenir-Demi';
+    src: url("./../../src/assets/Font/AvenirNext/AvenirNextLTPro-Demi.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin AvenirDemi {
+    font-family: 'Avenir-Demi', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: $black;
+}
+
+@font-face {
+    font-family: 'Avenir-Regular';
+    src: url("./../../src/assets/Font/AvenirNext/AvenirNextLTPro-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin AvenirRegular {
+    font-family: 'Avenir-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $black;
+}

@@ -1,0 +1,199 @@
+@import './../../partials/fonts';
+@import './../../partials/media-rules';
+@import './../../partials/variables';
+
+.upload{
+    margin: 0 16px;
+        @include tablet {
+            margin: 0 24px;
+        }
+
+        @include desktop{
+            margin: 0 180px;
+        }
+
+    &__router-link{
+        text-decoration: none;
+    }
+
+    &__title{
+        @include AvenirBold;
+        @include phoneh1;
+            @include tablet {
+                @include h1;
+            }
+            @include desktop {
+                @include h1;
+            }
+    }
+
+    &__divider{
+        margin: 0 0 40px 0;
+        background-color: $silver;
+        display: none;
+            @include tablet {
+                display: block;
+            }
+            @include desktop {
+                display: block;
+            }
+    }
+
+    &__desktop-inline{
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+
+    &__grand-container{
+        display: flex;
+        flex-flow: column wrap;
+
+        @include desktop {
+            flex-flow: row nowrap;
+        }
+    }
+
+    &__form{
+        width: 100%
+    }
+
+    &__thumbnail{
+
+        &__title{
+            @include AvenirDemi;
+            @include h5;
+            text-transform: uppercase;
+            color: $silver;
+            margin: 8px 0;
+        }
+
+        &__img {
+            // width: 288px;
+            width: 100%;
+            height: 153px;
+            object-fit: cover;
+
+                @include tablet{
+                    width: 344px;
+                    height: 183px;
+                }
+
+                @include desktop {
+                    width: 344px;
+                    height: 183px;
+                    margin-right: 24px;
+                }
+        }
+
+    }
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__container{
+         display: flex;
+         flex-flow: column wrap;
+            @include tablet {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            @include desktop {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+        }
+       
+        &__divider{
+            width: 100%;
+            margin: 40px 0;
+            background-color: $silver;
+            display: none;
+                @include tablet {
+                    display: block;
+                }
+                @include desktop {
+                    display: block;
+                }
+        }
+        &__field{
+         
+            &__title{
+                @include AvenirDemi;
+                @include h5;
+                text-transform: uppercase;
+                color: $silver;
+                margin: 8px 0;
+            }
+
+            &__input{
+                @include AvenirRegular;
+                @include h5;
+                width: 100%;
+                background-color: $alablaster;
+                resize: none;
+
+                &::placeholder{
+                    padding-left: 16px;
+                }
+
+            }
+        }
+
+        &__action{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 32px 0 0 0;
+            right: 100%;
+            
+
+                @include tablet {
+                flex-direction: row-reverse;
+                width: 20%;
+                align-self: flex-end;
+                }
+                @include desktop {
+                flex-direction: row-reverse;
+                align-self: flex-end;
+                }
+            
+
+           &__button{
+               border: none;
+               background-color: $brainflix-blue;
+               border-radius: 4px;
+               @include AvenirDemi;
+               @include h4;
+               text-transform: uppercase;
+               color: white;
+               width: 100%;
+               padding: 16px;
+               margin-bottom: 24px;
+                    @include tablet {
+                        margin-left: 48px
+                    }
+                    @include desktop {
+                        margin-left: 48px;
+                    }
+           }
+
+           &__cancel {
+               @include AvenirDemi;
+               @include h4;
+               text-transform: uppercase;
+               color: $brainflix-blue;
+               text-align: center;
+               padding-bottom: 24px;
+           }
+        }
+    }
+
+
+}

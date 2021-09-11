@@ -1,0 +1,63 @@
+//colours
+$black: #323232;
+$silver: #AFAFAF;
+$instock-blue: #004892;
+$brainflix-blue: #0095FF;
+$instock-blue-dark: #002F5F;
+$brainflix-blue-dark: #0065AD;
+$alablaster: #FAFAFA;
+$mercury: #E1E1E1;
+
+//desktop font sizes
+
+@mixin hero {
+    font-size: 3.75rem;
+    line-height: 68px;
+}
+
+@mixin h1 {
+    font-size: 2.25rem;
+    line-height: 44px;
+}
+
+@mixin h2 {
+    font-size: 1.5rem;
+    line-height: 32px;
+}
+
+@mixin h3 {
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+@mixin h4 {
+    font-size: 0.875rem;
+    line-height: 22px;
+}
+
+@mixin h4-contact {
+    font-size: 0.875rem;
+    line-height: 20px;   
+}
+
+@mixin h5 {
+    font-size: 0.75rem;
+    line-height: 20px;   
+}
+
+//phone font sizes
+@mixin phoneh1 {
+    font-size: 1.5rem;
+    line-height: 32px;   
+}
+
+@mixin phoneh2 {
+    font-size: 0.875rem;
+    line-height: 22px;   
+}
+
+@mixin phoneh4 {
+    font-size: 0.8125rem;
+    line-height: 18px;   
+}
+
